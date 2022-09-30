@@ -13,6 +13,7 @@ function App() {
           backgroundColor: "#14161a",
           color: "white",
           minHeight: "100vh",
+          height: "100%",
         }}
       >
         <Header />
