@@ -42,7 +42,7 @@ const Header = () => {
                 cursor: "pointer",
               }}
             >
-              Crypto(current)cy
+              Crypto tracker
             </Typography>
             <Select
               variant="outlined"

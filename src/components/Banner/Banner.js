@@ -36,7 +36,7 @@ const Banner = () => {
               fontFamily: "Montserrat",
             }}
           >
-            Crypto(current)cy
+            Crypto tracker
           </Typography>
           <Typography
             variant="subtitle2"
@@ -46,7 +46,7 @@ const Banner = () => {
               fontFamily: "Montserrat",
             }}
           >
-            Get all the information about favorite cryptocurrencies
+            Welcome to the live crypto tracker...
           </Typography>
         </div>
 

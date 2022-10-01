@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 import { Link } from "react-router-dom";
-import { CoinList, TrendingCoins } from "../../config/api";
+import { TrendingCoins } from "../../config/api";
 import { CryptoState } from "../../CryptoContext";
 
 export function numberWithCommas(x) {
@@ -18,10 +18,9 @@ const Carousel = () => {
     setTrending(data);
   };
 
-  //   console.log(trending);
-
   useEffect(() => {
     fetchTrendingCoins();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
 
   const items = trending.map((coin) => {
@@ -84,8 +83,8 @@ const Carousel = () => {
       <AliceCarousel
         mouseTracking
         infinite
-        autoPlayInterval={500}
-        animationDuration={450}
+        autoPlayInterval={1000}
+        animationDuration={500}
         disableDotsControls
         disableButtonsControls
         responsive={responsive}
